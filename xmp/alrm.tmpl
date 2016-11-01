@@ -1,0 +1,19 @@
+{{define "alrm"}}
+<!DOCTYPE html>
+<html><head>
+	<title>SI2K:calls</title>
+	<link rel="stylesheet" type="text/css" href="css/zstat.css"/>
+	<meta charset="UTF-8">
+	<script>
+	window.onkeypress = function(e) {
+    if ((e.which || e.keyCode) == 13) {
+        f0.submit();
+    }
+}
+</script>
+	</head>
+	<body>
+	<form id=f0 action="/form" method="post"></form>
+	<div class="alrm">Запит поверне {{.}} записів</div>
+</body></html>
+{{end}}
