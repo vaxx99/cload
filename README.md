@@ -1,2 +1,2 @@
-# sload
-sload
+# cload
+load SI2k to /bdb

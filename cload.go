@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/vaxx99/zload/cnf"
+	"github.com/vaxx99/cload/cnf"
 )
 
 type Flags struct {
