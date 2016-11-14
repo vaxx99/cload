@@ -477,9 +477,17 @@ func issi(fn string) bool {
 	defer f.Close()
 	data, _ := Read(f, 1)
 	ad := H2c(data)
-	if ad == "C8" {
+	switch ad {
+	case "C8":
+		return true
+	case "D2":
+		return true
+	case "D3":
+		return true
+	case "D4":
 		return true
 	}
+
 	return false
 }
 
